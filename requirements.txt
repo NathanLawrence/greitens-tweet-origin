@@ -10,8 +10,11 @@ future==0.16.0
 isodate==0.6.0
 jdcal==1.4
 leather==0.3.3
+numpy==1.14.3
 openpyxl==2.5.3
+pandas==0.23.0
 parsedatetime==2.4
+python-dateutil==2.7.3
 python-slugify==1.2.5
 pytimeparse==1.1.8
 pytz==2018.4
