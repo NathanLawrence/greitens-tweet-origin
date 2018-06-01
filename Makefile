@@ -16,6 +16,5 @@ ind_xls2csv:
 merge_pulls:
 	time=$$(date '+%Y-%m-%d-%H_%M_%S'); \
 	filename="merge-$$time.csv"; \
-	files=$$(find "$$PWD/csv-individual-pull" -type f); \
-	csvstack -e utf-8-sig $$files > "pulls_merged/$$filename"; \
-	python dedupe.py "pulls_merged/$$filename"
+	files=$$(find "$$PWD/xls-individual-pull" -type f -iname "*.xlsx"); \
+	python merge_deduped.py $$files
